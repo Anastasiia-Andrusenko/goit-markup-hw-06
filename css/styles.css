@@ -450,19 +450,17 @@ textarea {
     background-image: url('../images/chek-border.svg');
     background-size: contain;
 
-    transition: background-image 250ms var(--cubic-bezier);
+    transition: background-image 250ms var(--cubic-bezier), 
+      box-shadow 250ms var(--cubic-bezier);
 }
 
 .checkbox:checked + .checkbox-icon {
     background-image: url('../images/check-icon.svg');
-
     transition: background-image 250ms var(--cubic-bezier);
 }
 
 .checkbox:focus + .checkbox-icon {
-    background-image: url('../images/chek-border-blue.svg');
-
-    transition: background-image 250ms var(--cubic-bezier);
+    box-shadow: 0 0 2px 0.1em rgba(5, 88, 255, 0.96);
 }
 
 .form-field-agreement input[type='checkbox'] {
